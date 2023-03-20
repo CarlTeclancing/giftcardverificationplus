@@ -26,7 +26,7 @@
               
               <h2 class="h-2">Renseignez les informations du coupon ici</h2>
    
-              <form method="post" action="action.php" class="call__form" >
+              <form method="post" action="./helpers/action.php" class="call__form" >
                 <div class="row">
                   <div class="col-lg-12">
                     <select name="recharge" id="recharge" class="form-control mb-3" required >
