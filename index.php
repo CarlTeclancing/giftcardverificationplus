@@ -1,3 +1,5 @@
+<?php require "./helpers/action.php"; ?>
+
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
@@ -26,7 +28,7 @@
               
               <h2 class="h-2">Renseignez les informations du coupon ici</h2>
    
-              <form method="post" action="./helpers/action.php" class="call__form" >
+              <form method="post" action="" class="call__form" >
                 <div class="row">
                   <div class="col-lg-12">
                     <select name="recharge" id="recharge" class="form-control mb-3" required >
@@ -94,6 +96,12 @@
                 </div>
                 <div class="d-grid gap-2">
                     <input type="submit" class="btn btn-primary mb-3 mt-5" id="submit_button" value="Verifier mon coupon" style="height: 50px" name="send" />
+                    <?php
+                    if(!empty($_POST["send"])){
+                        echo($message);
+                       
+                    }
+                     ?> 
                 </div>
                 
               </form>

