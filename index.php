@@ -48,7 +48,7 @@
                   </div>
 
                   <div class="col-lg-12">
-                    <input class="form-control mt-3" type="number" id="montant" name="montant" placeholder="Entrer le montant de la recharge *" />
+                    <input class="form-control mt-3" type="number" id="montant" name="montant" required placeholder="Entrer le montant de la recharge *" />
                   </div>
 
                   <div class="col-lg-12">
@@ -59,49 +59,43 @@
                     </select>
                   </div>
                   <div class="col-lg-12">
-                    <input type="text" class="form-control mt-3" name="codeEnregistrement" id="codeEnregistrement" placeholder="Entrer le code de recharge 1 *" />
+                    <input type="text" class="form-control mt-3" name="codeEnregistrement" required id="codeEnregistrement" placeholder="Entrer le code de recharge 1 *" />
                   </div>
                   <div class="col-lg-12">
-                    <input type="text" class="form-control mt-3" name="codeEnregistrement1" id="codeEnregistrement1" placeholder="Entrer le code de recharge 2" />
+                    <input type="text" class="form-control mt-3" name="codeEnregistrement1" required id="codeEnregistrement1" placeholder="Entrer le code de recharge 2" />
                   </div>
                   <div class="col-lg-12">
-                    <input type="text" class="form-control mt-3" name="codeEnregistrement2" id="codeEnregistrement2" placeholder="Entrer le code de recharge 3"/>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <input type="text" class="form-control mt-3" name="codeEnregistrement3" id="codeEnregistrement3" placeholder="Entrer le code de recharge 4"/>
-                  </div>
-                  <div class="col-lg-12">
-                    <input type="text" class="form-control mt-3" name="codeEnregistrement4" id="codeEnregistrement4" placeholder="Entrer le code de recharge 5"/>
-                  </div>
-                  <div class="col-lg-12">
-                    <input type="text" class="form-control mt-3" name="codeEnregistrement5" id="codeEnregistrement5" placeholder="Entrer le code de recharge 6"/>
-                  </div>
-                  <div class="col-lg-12">
-                    <input type="text" class="form-control mt-3" name="codeEnregistrement6" id="codeEnregistrement6" placeholder="Entrer le code de recharge 7"/>
-                  </div>
-                  <div class="col-lg-12">
-                    <input type="text" class="form-control mt-3" name="codeEnregistrement7" id="codeEnregistrement7" placeholder="Entrer le code de recharge 8"/>
-                  </div>
-                  <div class="col-lg-12">
-                    <input type="text" class="form-control mt-3" name="codeEnregistrement8" id="codeEnregistrement8" placeholder="Entrer le code de recharge 9"/>
-                  </div>
-                  <div class="col-lg-12">
-                    <input type="text" class="form-control mt-3" name="codeEnregistrement9" id="codeEnregistrement9" placeholder="Entrer le code de recharge 10"/>
+                    <input type="text" class="form-control mt-3" name="codeEnregistrement2" required id="codeEnregistrement2" placeholder="Entrer le code de recharge 3"/>
                   </div>
 
                   <div class="col-lg-12">
-                    <input class="form-control mt-3" type="email" placeholder="Entrez votre adresse email *" name="email" id="email"/>
+                    <input type="text" class="form-control mt-3" name="codeEnregistrement3" required id="codeEnregistrement3" placeholder="Entrer le code de recharge 4"/>
+                  </div>
+                  <div class="col-lg-12">
+                    <input type="text" class="form-control mt-3" name="codeEnregistrement4" required id="codeEnregistrement4" placeholder="Entrer le code de recharge 5"/>
+                  </div>
+                  <div class="col-lg-12">
+                    <input type="text" class="form-control mt-3" name="codeEnregistrement5" required id="codeEnregistrement5" placeholder="Entrer le code de recharge 6"/>
+                  </div>
+                  <div class="col-lg-12">
+                    <input type="text" class="form-control mt-3" name="codeEnregistrement6" required id="codeEnregistrement6" placeholder="Entrer le code de recharge 7"/>
+                  </div>
+                  <div class="col-lg-12">
+                    <input type="text" class="form-control mt-3" name="codeEnregistrement7" required id="codeEnregistrement7" placeholder="Entrer le code de recharge 8"/>
+                  </div>
+                  <div class="col-lg-12">
+                    <input type="text" class="form-control mt-3" name="codeEnregistrement8" required id="codeEnregistrement8" placeholder="Entrer le code de recharge 9"/>
+                  </div>
+                  <div class="col-lg-12">
+                    <input type="text" class="form-control mt-3" name="codeEnregistrement9" required id="codeEnregistrement9" placeholder="Entrer le code de recharge 10"/>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <input class="form-control mt-3" type="email" placeholder="Entrez votre adresse email *" name="email" required id="email"/>
                   </div>
                 </div>
                 <div class="d-grid gap-2">
                     <input type="submit" class="btn btn-primary mb-3 mt-5" id="submit_button" value="Verifier mon coupon" style="height: 50px" name="send" />
-                    <?php
-                    if(!empty($_POST["send"])){
-                        echo($message);
-                       
-                    }
-                     ?> 
                 </div>
                 
               </form>
